@@ -6,14 +6,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity_Menu_Info extends AppCompatActivity {
-
+    TextView tv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +24,49 @@ public class MainActivity_Menu_Info extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle("Thông tin sinh viên");
         actionBar.setDisplayHomeAsUpEnabled(true);
+        
+        tv = findViewById(R.id.tv);
+        tv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String url="https://facebook.com/HuyHuyPham01";
+                AlertDialog.Builder d = new AlertDialog.Builder(MainActivity_Menu_Info.this);
+
+                // Thiết lập tiêu đề
+                d.setTitle("Xác nhận");
+                d.setMessage("Bạn có đồng ý truy cập web không?");
+
+                // Nút OK
+                d.setPositiveButton("Đồng ý", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+//                        Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+//                        startActivity(intent);
+
+                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                        startActivity(intent);
+
+//                        Intent startMain = new Intent(Intent.ACTION_MAIN);
+//                        startActivity(startMain);
+                        finish();
+                    }
+                });
+
+                // Nút Cancel
+                d.setNegativeButton("Không đồng ý", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                });
+
+                // Tạo dialog
+                AlertDialog al = d.create();
+
+                // Hiển thị
+                al.show();
+            }
+
+        });
     }
 
     @Override
