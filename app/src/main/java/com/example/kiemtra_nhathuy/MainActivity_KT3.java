@@ -68,7 +68,7 @@ public class MainActivity_KT3 extends AppCompatActivity {
                 onBackPressed();
                 return true;
             case R.id.menu1:
-                Toast.makeText(MainActivity_KT3.this, "Bạn nhấn vào Menu 1", Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity_KT3.this, "Bạn nhấn vào Bảng điểm", Toast.LENGTH_LONG).show();
                 break;
             case R.id.menuInfo:
                 Intent i = new Intent(MainActivity_KT3.this,MainActivity_Menu_Info.class);
