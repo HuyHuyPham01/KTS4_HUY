@@ -70,7 +70,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="7"
-                    app:srcCompat="@drawable/img_1" />
+                    app:srcCompat="@drawable/img_main" />
 
                 <TextView
                     android:id="@+id/textViewKT1"
@@ -97,7 +97,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="7"
-                    app:srcCompat="@drawable/img_1" />
+                    app:srcCompat="@drawable/img_main" />
 
                 <TextView
                     android:id="@+id/textViewKT3"
@@ -124,7 +124,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="7"
-                    app:srcCompat="@drawable/img_1" />
+                    app:srcCompat="@drawable/img_main" />
 
                 <TextView
                     android:id="@+id/textViewKT5"
@@ -160,7 +160,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="7"
-                    app:srcCompat="@drawable/img_1" />
+                    app:srcCompat="@drawable/img_main" />
 
                 <TextView
                     android:id="@+id/textViewKT2"
@@ -187,7 +187,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="7"
-                    app:srcCompat="@drawable/img_1" />
+                    app:srcCompat="@drawable/img_main" />
 
                 <TextView
                     android:id="@+id/textViewKT4"
@@ -214,7 +214,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="7"
-                    app:srcCompat="@drawable/img_1" />
+                    app:srcCompat="@drawable/img_main" />
 
                 <TextView
                     android:id="@+id/textViewKT6"

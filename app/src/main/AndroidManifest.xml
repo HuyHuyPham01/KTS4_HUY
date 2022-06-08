@@ -14,6 +14,9 @@
         android:theme="@style/Theme.KiemTra_NhatHuy"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivity_KT4"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity_Menu_Info"
             android:exported="false" />
         <activity

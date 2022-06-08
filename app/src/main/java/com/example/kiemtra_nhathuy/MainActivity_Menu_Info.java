@@ -34,7 +34,7 @@ public class MainActivity_Menu_Info extends AppCompatActivity {
 
                 // Thiết lập tiêu đề
                 d.setTitle("Xác nhận");
-                d.setMessage("Bạn có đồng ý truy cập web không?");
+                d.setMessage("Bạn có đồng ý truy cập Facebook không?");
 
                 // Nút OK
                 d.setPositiveButton("Đồng ý", new DialogInterface.OnClickListener() {

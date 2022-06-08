@@ -70,7 +70,8 @@ public class MainActivity extends AppCompatActivity {
         imageViewKT4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                i = new Intent(MainActivity.this, MainActivity_KT4.class);
+                startActivity(i);
             }
         });
 
